@@ -18,15 +18,6 @@ pipeline {
                 export API_DRIVER_NAME="pashaemail@yahoo.com"
                 export API_DRIVER_PASS="@Test123456!"
 
-                newman run postman/scripts/canoo-js-service-client-pke.postman_collection.json \
-                --env-var "baseUrl=${DP_SERVICE_BASEURL}" \
-                --env-var "client_id=${AUTH_CLIENT_ID}" \
-                --env-var "client_secret=${AUTH_CLIENT_SECRET}" \
-                --env-var "username=${API_DRIVER_NAME}" \
-                --env-var "userpass=${API_DRIVER_PASS}"
-                """
-
-
 
             }
         }
